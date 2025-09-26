@@ -1,6 +1,7 @@
 // RESET
 // Smooths out the rough edges across browsers
 @use './tools/normalize';
+@use 'node_modules/leaflet/dist/leaflet';
 
 // VARIABLES
 // Reusable settings
@@ -17,6 +18,13 @@
     padding: 0 15px;
   }
 }
+
+#map path {
+  fill: #e64d1f;
+  fill-opacity: 0.5;
+  stroke-opacity: 0;
+}
+
 .graphics-container {
   display: flex;
   justify-content: space-between;
